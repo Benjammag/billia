@@ -1,6 +1,7 @@
 import Hero from '@/components/hero/page';
 import Service from '@/components/services/page';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -91,8 +92,8 @@ export default function Home() {
             </div>
 
             <div className="flex gap-5 pl-4">
-              <Image src="/play-store.svg" alt="Google Play" width={150} height={50} />
-              <Image src="/app-store.svg" alt="App Store" width={150} height={50} />
+              <Link href="#"><Image src="/play-store.svg" alt="Google Play" width={150} height={50} /></Link>
+              <Link href="#"><Image src="/app-store.svg" alt="App Store" width={150} height={50} /></Link>
             </div>
           </div>
 

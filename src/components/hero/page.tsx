@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -16,8 +17,8 @@ export default function Hero() {
                             Billia lets you pay bills, top up airtime, buy data, and manage your wallet — all in one place. Fast. Secure. Reliable.
                         </p>
                         <div className="flex gap-4 mt-4">
-                            <Image src="/play-store.svg" alt="Google Play" width={150} height={50} />
-                            <Image src="/app-store.svg" alt="App Store" width={150} height={50} />
+                            <Link href="#"><Image src="/play-store.svg" alt="Google Play" width={150} height={50} /></Link>
+                            <Link href="#"><Image src="/app-store.svg" alt="App Store" width={150} height={50} /></Link>
                         </div>
                         <div className="flex items-center gap-4 mt-4">
                             <Image src="/people.svg" alt="Users" width={92} height={40} />
