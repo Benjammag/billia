@@ -1,23 +1,27 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
     return (
         <header className="bg-[#FEF8EE] w-full h-[106px] flex items-center">
             <div className="max-w-[1440px] w-full mx-auto flex items-center justify-between px-6 md:px-20">
-                {/* Logo - shifted inward with smaller gap */}
-                <div className="flex items-center gap-3 min-w-[160px] m-[50px]">
-                    <Image src="/logo.svg" alt="Billia Logo" width={145} height={60} />
+
+                {/* Logo Section */}
+                <div className="flex items-center gap-3 min-w-[160px]">
+                    <a href="/">
+                        <Image src="/logo.svg" alt="Billia Logo" width={145} height={60} />
+                    </a>
                     <h1 className="font-bold text-lg">Billia</h1>
                 </div>
 
-                {/* Nav - slightly nudged to the right */}
-                <nav className="hidden md:flex gap-10 text-sm ml-8 flex-1 justify-center">
-                    <a href="#" className="text-orange-500 font-medium">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Features</a>
-                    <a href="#">Testimonials</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a>
+                {/* Navigation (centered) */}
+                <nav className="hidden md:flex gap-10 text-sm justify-center flex-1">
+                    <Link href="#" className="text-orange-500 font-medium">Home</Link>
+                    <Link href="/about">About Us</Link>
+                    <Link href="#">Features</Link>
+                    <Link href="#">Testimonials</Link>
+                    <Link href="#">FAQ</Link>
+                    <Link href="#">Contact Us</Link>
                 </nav>
             </div>
         </header>
