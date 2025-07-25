@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Service() {
     return (
         <section className="w-full flex justify-center bg-[#FFF8F3] px-4 py-12">
@@ -10,13 +12,13 @@ export default function Service() {
                             <h4 className="font-bold mb-2">All-in-One Bill Payments</h4>
                             <p>Pay for electricity, TV, internet, education, and</p>
                             <p>betting — all in seconds.</p>
-                            <img src="/lady.svg" alt="lady" className="mx-auto" width={240} height={258} />
+                            <Image src="/lady.svg" alt="lady" className="mx-auto" width={240} height={258} />
                         </div>
                         <div className="flex-1 bg-[#E1F7E6] p-6 rounded-2xl gap-2 w-[588px] h-[350px]">
                             <h4 className="font-bold mb-2">Airtime & Data Top-Up</h4>
                             <p>Buy airtime and mobile data for yourself or others </p>
                             <p>— instantly and globally.</p>
-                            <img src="/airtime.svg" alt="airtime" className="mx-auto" width={290} height={281} />
+                            <Image src="/airtime.svg" alt="airtime" className="mx-auto" width={290} height={281} />
                         </div>
                     </div>
 
@@ -28,7 +30,7 @@ export default function Service() {
                         </div>
 
                         <div className="pr-4">
-                            <img src="/card.svg" alt="card" width={395} height={292} />
+                            <Image src="/card.svg" alt="card" width={395} height={292} />
                         </div>
                     </div>
                 </div>

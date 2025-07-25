@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
     return (
@@ -17,7 +18,7 @@ export default function About() {
                         </h1>
                         <h1 className="text-3xl text-center md:text-4xl font-bold mb-4 text-[#3F1D00]">Pay, One Bill at a Time</h1>
                         <p className="text-lg">
-                            At Billia, we're building more than just a payment app — we’re
+                            At Billia, we&apos;re building more than just a payment app — we&apos;re
                         </p>
                         <p>creating a smarter, simpler way for everyday Nigerians to stay</p>
                         <p>connected, pay their bills, and take control of their financial lives.</p>
@@ -36,7 +37,7 @@ export default function About() {
                         <p className="mb-6">payment platforms.</p>
                         <p>So we built one app that brings it all together — electricity, internet,</p>
                         <p>school fees, airtime, and even a virtual dollar card. Add Billia AI,</p>
-                        <p>and you’ve got the smartest payment experience available today.</p>
+                        <p>and you&apos;ve got the smartest payment experience available today.</p>
                     </div>
 
                     {/* Image */}
@@ -121,7 +122,7 @@ export default function About() {
                                             <p className='w-[504px] h-[70px] font-normal text-xl leading-3 tracking-normal'>{val.desc}</p>
                                             <p className='w-[504px] h-[70px] font-normal text-xl leading-3 tracking-normal'>{val.descr}</p>
                                         </div>
-                                        <img
+                                        <Image
                                             src={val.image}
                                             alt={val.title}
                                             className="absolute bottom-4 right-4 w-[150px] h-[150px] object-contain"
@@ -161,7 +162,7 @@ export default function About() {
                                             <p className='w-[504px] h-[70px] font-normal text-xl leading-3 tracking-normal'>{val.desc}</p>
                                             <p className='w-[504px] h-[70px] font-normal text-xl leading-3 tracking-normal'>{val.descr}</p>
                                         </div>
-                                        <img
+                                        <Image
                                             src={val.image}
                                             alt={val.title}
                                             className="absolute bottom-4 right-4 w-[150px] h-[150px] object-contain"
@@ -178,7 +179,7 @@ export default function About() {
             {/* Call to Action */}
             <section className="bg-white px-6 py-16 text-center">
                 <div className="w-full max-w-[1440px] mx-auto flex flex-col items-center justify-center gap-12 p-9">
-                    {/* Headings */}
+
                     <div className="max-w-[900px]">
                         <h2 className="text-3xl font-medium leading-[100%] mb-2 text-[#3F1D00]">
                             Ready to simplify your bills?
@@ -189,20 +190,20 @@ export default function About() {
                     </div>
 
                     <div className="flex justify-center gap-5">
-                        <a href="#"><Image
+                        <Link href="#"><Image
                             className="py-[7.2px] px-[14.4px]"
                             src="/play-store.svg"
                             alt="Google Play"
                             width={152.4}
                             height={51.6}
-                        /></a>
-                        <a href="#"><Image
+                        /></Link>
+                        <Link href="#"><Image
                             className="py-[8.4px] px-[14.4px]"
                             src="/app-store.svg"
                             alt="App Store"
                             width={156}
                             height={51.6}
-                        /></a>
+                        /></Link>
                     </div>
                 </div>
             </section>

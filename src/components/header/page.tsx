@@ -6,15 +6,15 @@ export default function Navbar() {
         <header className="bg-[#FEF8EE] w-full h-[106px] flex items-center">
             <div className="max-w-[1440px] w-full mx-auto flex items-center justify-between px-6 md:px-20">
 
-                {/* Logo Section */}
+
                 <div className="flex items-center gap-3 min-w-[160px]">
-                    <a href="/">
+                    <Link href="/">
                         <Image src="/logo.svg" alt="Billia Logo" width={145} height={60} />
-                    </a>
+                    </Link>
                     <h1 className="font-bold text-lg">Billia</h1>
                 </div>
 
-                {/* Navigation (centered) */}
+
                 <nav className="hidden md:flex gap-10 text-sm justify-center flex-1">
                     <Link href="#" className="text-orange-500 font-medium">Home</Link>
                     <Link href="/about">About Us</Link>

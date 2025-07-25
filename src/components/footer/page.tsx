@@ -19,9 +19,9 @@ export default function Footer() {
                             Our all-in-one app for bills, airtime, data, and smart payments — powered by Billia AI.
                         </p>
                         <div className="flex gap-4 mt-2">
-                            <a href="#"><Image src="/facebook.svg" alt="Facebook" width={24} height={20} /></a>
-                            <a href="#"><Image src="/insta.svg" alt="Instagram" width={20} height={20} /></a>
-                            <a href="#"><Image src="/twitter.svg" alt="Twitter" width={22} height={22} /></a>
+                            <Link href="#"><Image src="/facebook.svg" alt="Facebook" width={24} height={20} /></Link>
+                            <Link href="#"><Image src="/insta.svg" alt="Instagram" width={20} height={20} /></Link>
+                            <Link href="#"><Image src="/twitter.svg" alt="Twitter" width={22} height={22} /></Link>
                         </div>
                     </div>
 
@@ -41,8 +41,8 @@ export default function Footer() {
                     <div>
                         <h5 className="font-semibold mb-2">Legal</h5>
                         <ul className="text-sm space-y-1">
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
+                            <li><Link href="#">Privacy Policy</Link></li>
+                            <li><Link href="#">Terms of Service</Link></li>
                         </ul>
                     </div>
 
